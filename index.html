@@ -725,14 +725,14 @@
                     .addTo(map)
             });
 
-            map.addSource('coal_IGP', {
+            map.addSource('coal', {
                 type: 'geojson',
-                data: 'https://gist.githubusercontent.com/bilalpervaiz/d7db247dc843951c9c51089a58225d8c/raw/b3864b0192e5115dbf7ad682f4a909177916b799/coal.geojson'
+                data: 'https://gist.githubusercontent.com/khizerzakir/a9e180600a02789bc25dbdc411f86164/raw/41f71ccb635743bce26187bdb01dc96788d7065e/coal.geojson'
             });
             map.addLayer({
                 'id': 'coal',
                 'type': 'circle',
-                'source': 'coal_IGP', // reference the data source
+                'source': 'coal', // reference the data source
                 'paint': {
                     'circle-color': [
                         'interpolate',
@@ -804,14 +804,14 @@
             });
 
 
-            map.addSource('indian_plain', {
+            map.addSource('IGP_boundary', {
                 type: 'geojson',
-                data: 'https://gist.githubusercontent.com/bilalpervaiz/777aa4f0989c9abe556b3921bc558ab9/raw/69131b86d168ba2edccdcb53857ea0e468693beb/indian_plain.geojson'
+                data: 'https://gist.githubusercontent.com/khizerzakir/eb8c93010222e095612859bbdbd83922/raw/a268f4623284d79498a47b780f6343e0e1fd42a0/IGP_boundary.geojson'
             });
             map.addLayer({
                 'id': 'indian',
                 'type': 'line',
-                'source': 'indian_plain',
+                'source': 'IGP_boundary',
                 'paint': {
                     'line-color': 'black',
                     'line-width': 1,
